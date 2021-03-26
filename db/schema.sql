@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS furryDayCare_db;
+CREATE DATABASE furryDayCare_db;
