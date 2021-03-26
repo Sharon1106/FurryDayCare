@@ -9,5 +9,11 @@ User.hasMany(Profile, {
 Profile.belongsTo(User, {
   foreignKey: 'user_id'
 });
+// https://sequelize.org/master/manual/advanced-many-to-many.html
+//create connecton between 2 tables to connect users with many to many relationship using sequelize
+//user belongs to many users through reservation
+//connects through 
+//reservation 2 foreign keys to each user 
+// connect user to profile
 
 module.exports = { User, Profile };
