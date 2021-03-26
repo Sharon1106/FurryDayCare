@@ -12,12 +12,12 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  // for (const profile of profileData) {
-  //   await Profile.create({
-  //     ...profile,
-  //     user_id: users[Math.floor(Math.random() * users.length)].id,
-  //   });
-  // }
+  for (const profile of profileData) {
+    await Profile.create({
+      ...profile,
+      user_id: users[Math.floor(Math.random() * users.length)].id,
+    });
+  }
 
   process.exit(0);
 };
