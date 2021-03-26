@@ -1,0 +1,91 @@
+* {
+    font-family: hero-new, sans-serif; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: lightpink;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 5px solid purple;
+    align-self: center;
+    margin: 5rem;
+    background: white;
+    width: 90%;
+    opacity: 100%;
+}
+
+.title{
+    grid-template-rows: 1fr;
+    margin-top: 2rem;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem;
+}
+
+.mission-statement {
+    border: 5px solid red;
+}
+
+.sign-in {
+    border: 5px solid yellow;
+}
+.nav-bar{
+/* position: absolute; */
+display: grid;
+grid-template-columns: 5fr 2fr;
+list-style-type: none;
+border: 5px solid red;
+margin-top: 1rem;
+width: 90%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    padding: 1rem;
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    padding-top: 4rem;
+}
+
+.user-card {
+    border: 5px solid red;
+    padding: 3rem;
+    margin-right: .5rem;
+    
+}
+
+.pet-card {
+    border: 5px solid yellow;
+    padding: 3rem;
+    margin-left: .5rem;
+}
+
+.card-title {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
