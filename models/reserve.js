@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Profile extends Model {}
+class Reserve extends Model {}
 
-Profile.init(
+Reserve.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,28 +11,31 @@ Profile.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    customerName: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
+    customerEmail: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
+    petName: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
+    phoneNumber: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+
+    }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'profile',
+    modelName: 'reserve',
   }
 );
 
-module.exports = Profile;
+module.exports = Reserve;
