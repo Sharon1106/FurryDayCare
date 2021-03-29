@@ -1,0 +1,10 @@
+[
+  {
+    "reserveId": 1,
+    "userId": 1
+  },
+  {
+      "reserveId": 2,
+      "userId": 1
+  }
+]

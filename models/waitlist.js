@@ -24,10 +24,17 @@ Waitlist.init(
       allowNull: false,
     },
     phoneNumber: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
-
-    }
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
+    
   },
   {
     sequelize,
@@ -35,6 +42,7 @@ Waitlist.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'waitlist',
+    
   }
 );
 
