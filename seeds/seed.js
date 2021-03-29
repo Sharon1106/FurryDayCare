@@ -3,12 +3,9 @@ const { User, Profile, Waitlist, ReservationWaitlist} = require('../models');
 
 const userData = require('./userData.json');
 const profileData = require('./profileData.json');
-<<<<<<< HEAD
-=======
 const waitlistData = require('./waitlistData.json');
 // const reservationWaitlistData= require('./reservationWaitlist.json');
 
->>>>>>> 882cb9f8a4537f3df71d92c86f505f0c85012f9f
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
