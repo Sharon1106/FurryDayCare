@@ -1,11 +1,9 @@
 const sequelize = require('../config/connection');
-const { User, Profile, Waitlist, ReservationWaitlist} = require('../models');
+const { User, Profile, Reserve } = require('../models');
 
 const userData = require('./userData.json');
 const profileData = require('./profileData.json');
-const waitlistData = require('./waitlistData.json');
-// const reservationWaitlistData= require('./reservationWaitlist.json');
-
+const reserveData = require('./reserveData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -21,8 +19,10 @@ const seedDatabase = async () => {
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
-  const waitlist = await Waitlist.bulkCreate(waitlistData);
-  // const reservationWaitlist = await ReservationWaitlist.bulkCreate(reservationWaitlistData);
+
+  const reserve = await Reserve.bulkCreate(reserveData);
+  
+
   process.exit(0);
 };
 
