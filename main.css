@@ -54,13 +54,13 @@ img {
 }
 
 .hero-gray-layer {    
-    background-color: rgba(236, 128, 218, 0.466);
+    background-color: rgba(236, 128, 218, 0.4);
     /* position: relative; */
     top: 0;
     left: 0;
     width: 200%;
     height: 100%;
-    opacity: 2000%;
+    /* opacity: 1000%; */
 }
 
 .box {
@@ -140,18 +140,26 @@ li {
     /* border: 5px solid red; */
     border-radius: 15px;
     padding: 3rem;
-    margin-right: .5rem;
+    margin-right: 1.5rem;
     background: var(--pink);
     color: white;
     
 }
 
-.pet-card {
-    /* border: 5px solid yellow; */
-    margin-left: .5rem;
+.home-card {
     border-radius: 15px;
     padding: 3rem;
-    margin-right: .5rem;
+    margin-right: 1.5rem;
+    background: var(--pink);
+    color: white;
+}
+
+.pet-card {
+    /* border: 5px solid yellow; */
+    margin-left: 1.5rem;
+    border-radius: 15px;
+    padding: 3rem;
+    /* margin-right: .5rem; */
     background: var(--pink);
     color: white;
     
@@ -176,3 +184,38 @@ li {
 .log-in {
     font-size: 2rem;
 }
+
+.list {
+    display: grid;
+    grid-auto-rows: auto;
+    width: 80%;
+    margin-top: 3rem;
+}
+
+.waitlist,
+.reservations {
+    display: grid;
+    grid-auto-rows: auto;
+    /* border: 5px solid red; */
+    margin-bottom: 2rem;
+    /* border-radius: 15px; */
+}
+
+.waitlist-title,
+.reservations-title {
+    color: whitesmoke;
+    background-color: var(--font);
+    text-align: center;
+    font-size: 2rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.waitlist-body,
+.reservations-body {
+    background: whitesmoke;
+    height: 4rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
