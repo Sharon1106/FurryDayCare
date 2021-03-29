@@ -1,10 +1,14 @@
 const router = require('express').Router();
 const userRoutes = require('./userRoutes');
-const projectRoutes = require('./projectRoutes');
-const waitlistRoutes = require('./waitlistRoutes');
+const profileRoutes = require('./profileRoutes');
+const reserveRoutes = require('./reserveRoutes');
+const { ReservationWaitlist } = require('../../models');
 
 router.use('/waitlist', waitlistRoutes);
 router.use('/users', userRoutes);
-router.use('/profile', projectRoutes);
+router.use('/profile', profileRoutes);
+router.use('/reserve', reserveRoutes);
+// router.use('./reservations', reservationWaitlistRoutes);
+
 
 module.exports = router;
