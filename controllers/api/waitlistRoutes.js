@@ -33,7 +33,7 @@ router.get('/', async (req, res) => {
 
 
 // router will post/ create a new waitilst
-router.post('/waitlist', withAuth, async (req, res) => {
+router.post('/reservationandwaitlist', withAuth, async (req, res) => {
   try {
     const newWaitlist = await Waitlist.create({
       // by attaching user in fo through user id
