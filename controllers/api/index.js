@@ -2,7 +2,7 @@ const router = require('express').Router();
 const userRoutes = require('./userRoutes');
 const profileRoutes = require('./profileRoutes');
 const reserveRoutes = require('./reserveRoutes');
-const { ReservationWaitlist } = require('../../models');
+const waitlistRoutes = require ('./waitlistRoutes')
 
 router.use('/waitlist', waitlistRoutes);
 router.use('/users', userRoutes);
