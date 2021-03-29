@@ -3,12 +3,14 @@
       "customerName": "Sal",
       "customerEmail": "sal@hotmail.com",
       "petName": "buddy",
-      "phoneNumber": "5555555555"
+      "phoneNumber": "5555555555",
+      "user_id": 1
     },
     {
         "customerName": "Sam",
         "customerEmail": "sam@hotmail.com",
         "petName": "luna",
-        "phoneNumber": "5515555555"
+        "phoneNumber": "5515555555",
+        "user_id": 1
     }
   ]
