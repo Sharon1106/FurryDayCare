@@ -1,10 +1,13 @@
 :root {
     --pink: #ff97b4;
+    --background: #ffcbda;
+    --font: #8b73ff;
 
 }
 
 * {
     font-family: hero-new, sans-serif; 
+    color: white;
 }
 
 body {
@@ -12,19 +15,66 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* background: var(--background); */
+    background-image: url("background.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
     /* background: lightpink; */
 }
 
-.box {
+li {
+    font-size: 1.4rem;
+}
+
+.hero-header {
+    position: absolute;
+    z-index: 1000;
+    color: var(--pink);
+    font-size: 2rem;
+    top: 42rem;
+}
+
+img {
     display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.hero{
+    overflow:hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("parallax.jpeg");
+    height: 500px;
+    width:800%;
+}
+
+.hero-gray-layer {    
+    background-color: rgba(236, 128, 218, 0.466);
+    /* position: relative; */
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    opacity: 2000%;
+}
+
+.box {
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 1rem;
     border: 5px solid purple;
     align-self: center;
     margin: 5rem;
-    background: white;
+    /* background: white; */
     width: 90%;
     opacity: 100%;
 }
@@ -44,24 +94,27 @@ body {
     margin: 3rem;
 }
 
-.mission-statement {
-    border: 5px solid red;
+.home-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    padding-top: 4rem;
 }
 
 .sign-in {
     border: 5px solid yellow;
 }
 .nav-bar{
-/* position: absolute; */
-display: grid;
-grid-template-columns: 5fr 2fr;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 list-style-type: none;
-border: 5px solid red;
+/* border: 5px solid red; */
 margin-top: 1rem;
 width: 90%;
 align-items: center;
 justify-content: center;
-padding: 
 }
 
 .menu {
@@ -73,6 +126,7 @@ padding:
 
 li {
     padding: 1rem;
+    color: var(--font)
 }
 
 .profiles {
@@ -93,12 +147,32 @@ li {
 }
 
 .pet-card {
-    border: 5px solid yellow;
-    padding: 3rem;
+    /* border: 5px solid yellow; */
     margin-left: .5rem;
+    border-radius: 15px;
+    padding: 3rem;
+    margin-right: .5rem;
+    background: var(--pink);
+    color: white;
+    
 }
 
 .card-title {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-auto-rows: auto;
+}
+
+.bottombutton {
+    margin-bottom: 5rem;
+}
+
+.sign-in {
+    display: grid;
+    grid-auto-rows: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.log-in {
+    font-size: 2rem;
 }
