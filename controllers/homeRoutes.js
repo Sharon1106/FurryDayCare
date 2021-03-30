@@ -1,7 +1,9 @@
 const router = require('express').Router();
-const { Project, User } = require('../models');
+const { Project, User, Profile } = require('../models');
 const withAuth = require('../utils/auth');
 
+
+//login page
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
@@ -27,8 +29,11 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/project/:id', async (req, res) => {
+router.get('/bookings', async (req, res) => {
   try {
+    // const reservations = await Profile.
+    
+    
     const projectData = await Project.findByPk(req.params.id, {
       include: [
         {

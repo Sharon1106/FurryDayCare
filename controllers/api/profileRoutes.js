@@ -15,24 +15,37 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-router.delete('/:id', withAuth, async (req, res) => {
-  try {
-    const ProfileData = await Profile.destroy({
-      where: {
-        id: req.params.id,
-        user_id: req.session.user_id,
-      },
-    });
 
-    if (!ProfileData) {
-      res.status(404).json({ message: 'No Profile found with this id!' });
-      return;
-    }
-
-    res.status(200).json(ProfileData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
+router.post("/profile", (req,res) => {
+    
+  let newProfile = req.body
+  newProfile.id = req.body.title
+  profile.push(newProfile)
+  fs.writeFile('db/db.json', JSON.stringify(profile), err => {
+      res.json(newProfile)
+  })
+  // console.table(notes)
+  
 });
+
+// router.delete('/:id', withAuth, async (req, res) => {
+//   try {
+//     const ProfileData = await Profile.destroy({
+//       where: {
+//         id: req.params.id,
+//         user_id: req.session.user_id,
+//       },
+//     });
+
+//     if (!ProfileData) {
+//       res.status(404).json({ message: 'No Profile found with this id!' });
+//       return;
+//     }
+
+//     res.status(200).json(ProfileData);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
 module.exports = router;

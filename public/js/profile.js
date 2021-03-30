@@ -1,3 +1,48 @@
+let profileInfo;
+let saveButton;
+
+if (window.location.pathname === '/profile') {
+    profileInfo = document.querySelector('.profile-info');
+    saveButton = document.querySelector('.save-profile');
+}
+
+let activeProfile = {};
+
+const renderProfile = () => {
+  
+    if (activeProfile.id) {
+      profileInfo.setAttribute();
+
+    } else {
+      profileInfo.value = '';
+    }
+  };
+
+
+  document
+  .querySelector('#profile-saveBtn')
+  .addEventListener('click', function(){
+      const name = document.querySelector('#profile-name').value;
+      const email = document.querySelector('#profile-email').value;
+      const number = document.querySelector('#profile-number').value;
+      const address = document.querySelector('#profile-address').value;
+
+        // add fetch function 
+        
+        // callback 
+
+      console.log('save user', name, email, number, address)
+  });
+
+
+  //add fetch 
+
+
+// document
+//   .querySelector('.project-list')
+//   .addEventListener('click', delButtonHandler);
+
+
 // const newFormHandler = async (event) => {
 //   event.preventDefault();
 
@@ -38,10 +83,4 @@
 //   }
 // };
 
-// document
-//   .querySelector('.new-project-form')
-//   .addEventListener('submit', newFormHandler);
 
-// document
-//   .querySelector('.project-list')
-//   .addEventListener('click', delButtonHandler);
