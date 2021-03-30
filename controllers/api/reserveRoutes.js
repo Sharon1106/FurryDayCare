@@ -6,15 +6,17 @@ const { Reserve, User } = require('../../models');
 
 router.get('/', async (req, res) => {
    try {
+       console.log("HIT ME!")
        const reserveData = await Reserve.findAll({
-        include: [
-          {
-            model: User, 
-          },
-        ],
+           include: [
+               {
+                   model: User, 
+                },
+            ],
       });
       const reserve = reserveData.map((profile) => profile.get({ plain: true }));
       console.log(reserve);
+
       res.render('homepage', { 
         reserve, 
         logged_in: req.session.logged_in 

@@ -18,4 +18,10 @@ if (process.env.JAWSDB_URL) {
   );
 }
 
+sequelize.authenticate().then(function (err) {
+  console.log("success")
+}).catch( err => {
+  console.log(err + "I AM RIGHT HERE")
+})
+
 module.exports = sequelize;
