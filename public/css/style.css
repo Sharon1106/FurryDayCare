@@ -147,8 +147,8 @@ li {
 
 .profiles {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 90%;
+  grid-template-columns: 1fr;
+  width: 50%;
   padding-top: 4rem;
 }
 
