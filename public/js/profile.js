@@ -26,13 +26,19 @@ let activeProfile = {};
       const email = document.querySelector('#profile-email').value;
       const number = document.querySelector('#profile-number').value;
       const address = document.querySelector('#profile-address').value;
+      const pet_name = document.querySelector('#pet-name').value;
+      const breed = document.querySelector('#breed').value;
+      const day_activity = document.querySelector('#day-activity').value;
+      const food_allergies = document.querySelector('#food-allergies').value;
 
       console.log('does it work');
         // add fetch function   
-        if (name && email && number && address) {
+        // pet info will also be placed here (reference models profile)
+        if (name && email && number && address && pet_name && breed && day_activity && food_allergies) {
             const response = await fetch('/api/profile', {
               method: 'POST',
-              body: JSON.stringify({ name, email, number, address }),
+              // pet info will be placed here (reference models profile)
+              body: JSON.stringify({ name, email, number, address, pet_name, breed, day_activity, food_allergies}),
               headers: { 'Content-Type': 'application/json' },
             });
         
@@ -47,7 +53,7 @@ let activeProfile = {};
 
         // callback 
 
-      console.log('save user', name, email, number, address)
+    //   console.log('save user', name, email, number, address)
   });
 
 
