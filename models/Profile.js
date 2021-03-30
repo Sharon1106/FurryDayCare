@@ -27,6 +27,21 @@ Profile.init(
       type: DataTypes.STRING,
       allowNull: false
     },
+    pet_name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    breed: {
+      type: DataTypes.STRING,
+    },
+    day_activity: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    food_allergies: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
