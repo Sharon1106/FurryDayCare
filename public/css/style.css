@@ -30,6 +30,7 @@ a {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--pink);
+  /* color: white */
 }
 
 li {
@@ -188,6 +189,12 @@ li {
 
 .bottombutton {
   margin-bottom: 5rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-auto-columns: auto;
+  justify-content: center;
+  width: 100%;
+  color:white;
 }
 
 .sign-in {
@@ -263,9 +270,10 @@ li {
   justify-content: center;
 }
 
-/* button {
-  align-self: baseline;
-} */
+.btn-primary {
+  /* align-self: baseline; */
+  color: white;
+}
 
 input{
   border: 1px solid lightgray;
