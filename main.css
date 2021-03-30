@@ -28,18 +28,22 @@ li {
     font-size: 1.4rem;
 }
 
-.hero-header {
-    position: absolute;
-    z-index: 1000;
-    color: var(--pink);
-    font-size: 2rem;
-    top: 42rem;
+input {
+    width: 100rem;
 }
 
 img {
     display: flex;
     align-items: center;
     justify-content: center
+}
+
+.hero-header {
+    position: absolute;
+    z-index: 1000;
+    color: var(--pink);
+    font-size: 2rem;
+    top: 42rem;
 }
 
 .hero{
@@ -120,8 +124,9 @@ justify-content: center;
 .menu {
     display: flex;
     flex-direction: row;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
 }
 
 li {
@@ -219,3 +224,24 @@ li {
     border-bottom-right-radius: 15px;
 }
 
+/* .spacer {
+    width: 200px;
+    height: 100px;
+} */
+
+.login-card {
+    display: grid;
+    grid-template-rows: 1fr;
+    /* height: 20rem; */
+    /* width: 90%;
+    padding-top: 4rem; */
+}
+
+/* .mb-3 {
+    display: flex;
+    flex-direction: column;
+} */
+
+.form-group {
+    line-height: 1rem;
+}
