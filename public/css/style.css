@@ -7,7 +7,6 @@
 
 * {
   font-family: hero-new, sans-serif; 
-  color: white;
 }
 
 body {
@@ -16,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   /* background: var(--background); */
-  background-image: url("background.png");
+  background-image: url("../images/background.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,6 +25,10 @@ body {
 
 li {
   font-size: 1.4rem;
+}
+
+label {
+  color: white
 }
 
 .hero-header {
@@ -48,7 +51,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("parallax.jpeg");
+  background-image: url("../images/parallax.jpeg");
   height: 500px;
   width:800%;
 }
@@ -217,5 +220,25 @@ li {
   height: 4rem;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.login-card {
+    border-radius: 15px;
+    padding: 3rem;
+    margin-right: 1.5rem;
+    background: var(--pink);
+    color: white;
+    height: 20rem;
+}
+
+.row {
+  margin-top: 3rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  color: darkslategray;
 }
 
