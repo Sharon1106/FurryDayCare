@@ -16,17 +16,8 @@ router.post('/', withAuth, async (req, res) => {
 });
 
 
-router.post("/profile", (req,res) => {
-    
-  let newProfile = req.body
-  newProfile.id = req.body.title
-  profile.push(newProfile)
-  fs.writeFile('db/db.json', JSON.stringify(profile), err => {
-      res.json(newProfile)
-  })
-  // console.table(notes)
-  
-});
+
+
 
 // router.delete('/:id', withAuth, async (req, res) => {
 //   try {
