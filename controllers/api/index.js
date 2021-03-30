@@ -8,7 +8,5 @@ router.use('/waitlist', waitlistRoutes);
 router.use('/users', userRoutes);
 router.use('/profile', profileRoutes);
 router.use('/reserve', reserveRoutes);
-// router.use('./reservations', reservationWaitlistRoutes);
-
 
 module.exports = router;
