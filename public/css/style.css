@@ -23,6 +23,15 @@ body {
   /* background: lightpink; */
 }
 
+a {
+  margin-left:1rem;
+  margin-right: 1rem;
+  font-family: hero-new, sans-serif; 
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--pink);
+}
+
 li {
   font-size: 1.4rem;
 }
@@ -34,10 +43,14 @@ label {
 .hero-header {
   position: absolute;
   z-index: 1000;
-  color: var(--pink);
+  color: var(--background);
   font-size: 2rem;
-  top: 42rem;
+  top: 40rem;
+  font-weight: bolder;
+  font-size: 4rem;
 }
+
+
 
 img {
   display: flex;
@@ -228,7 +241,8 @@ li {
     margin-right: 1.5rem;
     background: var(--pink);
     color: white;
-    height: 20rem;
+    height: 24rem;
+    margin-bottom: 5rem
 }
 
 .row {
@@ -237,8 +251,25 @@ li {
 
 .form-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width:100%;
   color: darkslategray;
+  line-height: .6rem;
+  /* flex-direction: center; */
 }
+
+.center-form {
+  display: flex;
+  justify-content: center;
+}
+
+/* button {
+  align-self: baseline;
+} */
+
+input{
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
 
