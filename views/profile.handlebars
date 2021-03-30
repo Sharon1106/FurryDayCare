@@ -3,24 +3,24 @@
                 <div class="card-title">
                     <h2>Your Profile</h2>
                 </div>
-                <div class="form">
+                <div class="form profile-info">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Mike Jones">
+                        <input type="name" class="form-control" id="profile-name" placeholder="Mike Jones">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="profile-email" placeholder="name@example.com">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Phone Number</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"placeholder="281-330-8004"></textarea>
+                        <textarea class="form-control" id="profile-number" rows="1"placeholder="281-330-8004"></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Address</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"placeholder="123 Main Street"></textarea>
+                        <textarea class="form-control" id="profile-address" rows="1"placeholder="123 Main Street"></textarea>
                     </div>
-                    <button type="button" class="btn btn-primary" style="font-size:1rem">Save Changes</button>
+                    <button type="button" class="btn btn-primary save-profile" style="font-size:1rem" id="profile-saveBtn">Save Changes</button>
                 </div>
             </div>
             <div class="pet-card">
@@ -30,19 +30,19 @@
                 <div class="form">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Max">
+                        <input type="email" class="form-control" id="pet-name" placeholder="Max">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Breed</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mutt">
+                        <input type="email" class="form-control" id="breed" placeholder="Mutt">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Walks Per Day</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"placeholder="most average 3 walks a day"></textarea>
+                        <label for="exampleFormControlTextarea1" class="form-label">Activity Per Day</label>
+                        <textarea class="form-control" id="day-activity" rows="1"placeholder="most average 3 walks a day"></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Food Allergies</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"placeholder="peanuts"></textarea>
+                        <textarea class="form-control" id="food-allergies" rows="1"placeholder="peanuts"></textarea>
                     </div>
                     <button type="button" class="btn btn-primary" style="font-size:1rem">Save Changes</button>
                 </div>
@@ -51,8 +51,8 @@
         <br>
         <br>
         <div class="bottombutton">
-            <button type="button" class="btn btn-primary" style="font-size:1.5rem">Book Now!</button>
+            <button type="button" class="btn btn-primary" style="font-size:1.5rem"><a href="/bookings">Book Now!</a></button>
         </div>
-        <script src="./js/profile.js"></script>
+        <script src="/js/profile.js"></script>
 </body>
 </html>
