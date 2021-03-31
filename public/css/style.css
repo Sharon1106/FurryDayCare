@@ -241,6 +241,7 @@ li {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   display: flex;
+  height: 50px;
   flex-direction: column;
   text-decoration: dotted;
   justify-content: center;
