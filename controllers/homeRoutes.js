@@ -85,7 +85,7 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/bookings', async (req, res) => {
+router.get('/bookings', withAuth, async (req, res) => {
   console.log('hello');
   try {
     // Find the logged in user based on the session ID
@@ -102,6 +102,16 @@ router.get('/bookings', async (req, res) => {
     });
   } catch (err) {
     res.status(500).json(err);
+  }
+});
+
+router.post('/logout', async (req, res) => {
+  if (req.session.logged_in) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  } else {
+    res.status(404).end();
   }
 });
 
