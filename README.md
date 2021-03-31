@@ -13,10 +13,10 @@
   ## Table of Contents
 
   * [Usage](#Usage)
+  * [Contribution](#Contribution)
   * [Built with](#Built-with)
   * [License](#License)
-  * [Contribution](#Contribution)
-  
+
   ## Usage 
 
   https://murmuring-island-53639.herokuapp.com/   
