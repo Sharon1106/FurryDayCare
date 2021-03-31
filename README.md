@@ -28,7 +28,7 @@
  For this project our wonderful collaborators were: [Alex Lee](https://github.com/alexdelrey), [Gina Vargas](https://github.com/ginavargas1) and [Sharon Martinez](https://github.com/Sharon1106)
   
   ## Built with
-  HTML•CSS•Sequalize•Express•Node •Express Handlebars•Photoshop •Illustrator•Dotenv•Bootstrap•Bcrypt
+  HTML•CSS•JavaScript•Sequalize•Express•Node •Express Handlebars•Photoshop •Illustrator•Dotenv•Bootstrap•Bcrypt
 
   ## License 
   This project is licensed under : [MIT](https://opensource.org/licenses/MIT)
