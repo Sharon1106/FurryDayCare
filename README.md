@@ -22,7 +22,6 @@ As our day-to-day work schedule slowly returns to normal, many people will need 
   ## Usage 
   https://murmuring-island-53639.herokuapp.com/   
   To start, create an account to setup your profile by going to the login page.
-  ![daycare2](https://user-images.githubusercontent.com/30086519/113202994-efcc9f80-9217-11eb-8f7f-624f4af159aa.png)
   From there, enter your furry friends information and special accomidations and book now!
   ![daycare 3](https://user-images.githubusercontent.com/30086519/113202992-ef340900-9217-11eb-8bee-b85bbe5ea347.png)
 
