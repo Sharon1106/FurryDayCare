@@ -3,14 +3,6 @@
 As our day-to-day work schedule slowly returns to normal, many people will need a reliable site and daycare in which they can trust.      Furry DayCare was inspired to help pet owners provide the best care and needs while at the job.   Pet owners don’t have to worry about their pet’s daily activities being hindered as it’s Furry DayCare’s mission to continue those routines.
 ![daycare 5](https://user-images.githubusercontent.com/30086519/113203000-efcc9f80-9217-11eb-8ff8-9a43a8c5c39b.png)
 
-  ## User Story
-
-  ```md
-  AS A pet daycare owner, 
-  I WANT a user friendly, easy to navigate website,
-  SO THAT pet owners can conveniently make a profile and book a stay at our daycare center
-  ```
-
   ## Table of Contents
 
   * [Usage](#Usage)
