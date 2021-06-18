@@ -19,7 +19,7 @@ As our day-to-day work schedule slowly returns to normal, many people will need 
   ![daycare 3](https://user-images.githubusercontent.com/30086519/113202992-ef340900-9217-11eb-8bee-b85bbe5ea347.png)
 
  ## Contribution
- For this project our wonderful collaborators were: [Alex Lee](https://github.com/alexdelrey), [Gina Vargas](https://github.com/ginavargas1) and [Sharon Martinez](https://github.com/Sharon1106)
+ Collaborators: [Alex Lee](https://github.com/alexdelrey), [Gina Vargas](https://github.com/ginavargas1) and [Sharon Martinez](https://github.com/Sharon1106)
   
   ## Built with
   HTML•CSS•JavaScript•Sequalize•Express•Node•Express Handlebars•Photoshop•Illustrator•Dotenv•Bootstrap•Bcrypt
